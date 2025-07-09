@@ -57,7 +57,7 @@ Provide **different experiences** to users and admins based on their role after 
 
 ---
 
-## 🔑 Included Files and Responsibilities
+##   Included Files and Responsibilities
 
 | File Path                             | Description                                      |
 |---------------------------------------|--------------------------------------------------|
@@ -71,7 +71,7 @@ Provide **different experiences** to users and admins based on their role after 
 
 ---
 
-## ⚙️ How It Works
+##   How It Works
 
 - Signup/Login forms handle auth with Firebase using email/password
 - Google OAuth handles popup or redirect flows
@@ -80,7 +80,7 @@ Provide **different experiences** to users and admins based on their role after 
 
 ---
 
-## ✅ How to Test
+##   How to Test
 
 1. **Local Setup:**
    - Set up `.env.local` with Firebase config
@@ -95,7 +95,7 @@ Provide **different experiences** to users and admins based on their role after 
 
 ---
 
-## 📦 Dependencies Used
+##   Dependencies Used
 
 - **Firebase Auth** – for secure email/password and Google login
 - **Next.js + TypeScript** – framework and typing
@@ -103,7 +103,7 @@ Provide **different experiences** to users and admins based on their role after 
 
 ---
 
-## 🏁 Next Steps (Checkpoint 5)
+##   Next Steps (Checkpoint 5)
 
 - Add curated hospital directory (`/curated`) and live nearby hospital search (`/nearby`) using Firestore and Geolocation API.
 
