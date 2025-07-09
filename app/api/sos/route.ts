@@ -1,0 +1,30 @@
+import { NextResponse } from 'next/server';
+import { db } from '../../../lib/firebase';
+import { addDoc, collection } from 'firebase/firestore';
+
+export async function POST(req: Request) {
+  if (!db) {
+    return NextResponse.json({ error: 'Firebase is not configured.' }, { status: 500 });
+  }
+
+  try {
+    const { lat, lng } = await req.json();
+
+    if (lat === undefined || lng === undefined) {
+      return NextResponse.json({ error: 'Missing latitude or longitude.' }, { status: 400 });
+    }
+
+    // Add the SOS alert to the 'sos-alerts' collection in Firestore
+    await addDoc(collection(db, 'sos-alerts'), {
+      timestamp: new Date(),
+      location: { lat, lng },
+      status: 'active', // You can add more fields like alert type if needed
+    });
+
+    return NextResponse.json({ success: true, message: 'SOS alert stored successfully.' }, { status: 200 });
+  } catch (e) {
+    console.error('SOS API Error:', e);
+    const errorMessage = e instanceof Error ? e.message : 'An unknown error occurred.';
+    return NextResponse.json({ error: 'Failed to store SOS alert.', details: errorMessage }, { status: 500 });
+  }
+}
