@@ -17,7 +17,7 @@ To provide a secure and user-friendly interface for managing personal health doc
 
 ---
 
-## 🔧 Tech Stack & Implementation
+##  Tech Stack & Implementation
 
 | Technology               |                          Role                                            |
 |--------------------------|--------------------------------------------------------------------------|
@@ -30,7 +30,7 @@ To provide a secure and user-friendly interface for managing personal health doc
 
 ---
 
-## 📂 Included Files and Responsibilities
+##  Included Files and Responsibilities
 
 | File Path                                  |                               Description                                             |
 |--------------------------------------------|---------------------------------------------------------------------------------------|
@@ -46,7 +46,7 @@ To provide a secure and user-friendly interface for managing personal health doc
 
 ---
 
-## 📘 Detailed Explanation of Key Files
+##  Detailed Explanation of Key Files
 
 ### 1. `app/digital-support/page.tsx`
 This is the main entry point for the Digital Support page, served at the `/digital-support` route. It ensures the page structure and imports the `DigitalSupport` component that contains the actual file upload and listing UI. If the user is not authenticated, this page redirects or restricts access.
@@ -77,7 +77,7 @@ These define the development environment, dependencies, build system, and global
 
 ---
 
-## ✅ How to Test
+##  How to Test
 
 1.  **Local Setup**:
     -   Create a `.env.local` file with your Firebase project credentials.
