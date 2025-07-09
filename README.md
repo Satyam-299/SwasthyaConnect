@@ -38,7 +38,7 @@ Global layout file that wraps all routes and pages. It includes shared elements 
 
 The main landing page of the app. It gives a quick overview of the app and links to all major functionalities.
 
-## 📁 Detailed File Structure & Purpose
+##  Detailed File Structure & Purpose
 
 ### Root & Config Files
 
@@ -84,7 +84,7 @@ The main landing page of the app. It gives a quick overview of the app and links
 | `health-mobility/page.tsx`           | Ride booking for ambulance or Uber/Rapido  |
 | `emergency-tools/page.tsx`           | SOS, live location alert tools             |
 
-### components/
+###   components/
 
 | File/Component                     |             Purpose                     |
 |------------------------------------|-----------------------------------------|
@@ -107,7 +107,7 @@ The main landing page of the app. It gives a quick overview of the app and links
 
 ---
 
-## 🔎 Feature Summary
+##   Feature Summary
 
 | Feature                     |        Description                      |
 |-----------------------------|-----------------------------------------|
@@ -121,7 +121,7 @@ The main landing page of the app. It gives a quick overview of the app and links
 | SOS Tools                   | Emergency call, WhatsApp, live tracking |
 ---
 
-## 🔎 Features Summary
+##   Features Summary
 
 - **Authentication** for patients and hospital admins.
 - **Real-time resource status** of hospital beds and oxygen.
