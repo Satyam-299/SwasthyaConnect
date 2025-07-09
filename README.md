@@ -5,7 +5,7 @@ This checkpoint sets up the foundational architecture for SwasthyaConnect — a 
 
 ---
 
-## 🧠 Problem Statement
+##  Problem Statement
 
 In emergencies, users struggle with:
 - Finding nearby hospitals
@@ -17,7 +17,7 @@ In emergencies, users struggle with:
 
 ---
 
-## 🎯 Purpose of This Checkpoint
+##  Purpose of This Checkpoint
 
 This checkpoint is dedicated to:
 - Setting up the **Next.js** framework
@@ -28,7 +28,7 @@ This checkpoint is dedicated to:
 
 ---
 
-## ⚙️ Tech Stack Used
+##  Tech Stack Used
 
 | Tool               | Use                                                                 |
 |--------------------|----------------------------------------------------------------------|
@@ -39,7 +39,7 @@ This checkpoint is dedicated to:
 
 ---
 
-## 📁 Included Files and Detailed Explanation
+##  Included Files and Detailed Explanation
 
 | File Path                   |            Description                                     |
 |-----------------------------|------------------------------------------------------------|
@@ -53,7 +53,7 @@ This checkpoint is dedicated to:
 | `.env.local.example`        | Sample Firebase env file for local dev                     |
 
 
-### ✅ Configuration Files
+###  Configuration Files
 
 - **`package.json`**
   - Lists project dependencies like `next`, `react`, `firebase`, `tailwindcss`
@@ -73,7 +73,7 @@ This checkpoint is dedicated to:
 
 ---
 
-### ✅ Core App Structure
+###  Core App Structure
 
 - **`app/layout.tsx`**
   - Defines the global HTML wrapper for all pages.
@@ -86,7 +86,7 @@ This checkpoint is dedicated to:
 
 ---
 
-### ✅ Firebase Setup
+###  Firebase Setup
 
 - **`lib/firebase.ts`**
   - Initializes Firebase App using environment variables.
@@ -110,7 +110,7 @@ export const auth = getAuth(app);
 
 ---
 
-### ✅ Environment File
+###  Environment File
 
 - **`.env.local.example`**
   - Template for creating your actual `.env.local`.
@@ -119,7 +119,7 @@ export const auth = getAuth(app);
 
 ---
 
-## 🔄 How It Works
+##  How It Works
 
 1. `npm install` sets up all required packages
 2. `firebase.ts` initializes backend logic with Firebase keys
@@ -128,7 +128,7 @@ export const auth = getAuth(app);
 
 ---
 
-## 🚀 How to Run Locally
+##  How to Run Locally
 
 1. Duplicate the example environment file:
 
@@ -155,7 +155,7 @@ npm run dev
 
 ---
 
-## ✅ Outcome
+##  Outcome
 
 After this checkpoint:
 - Your project has a scalable, production-ready skeleton
@@ -165,7 +165,7 @@ After this checkpoint:
 
 ---
 
-## 🪜 Next Steps (Checkpoint 2)
+##  Next Steps (Checkpoint 2)
 
 - Add basic UI components: Navbar, Hero, and Footer
 - Render static landing page using TailwindCSS
