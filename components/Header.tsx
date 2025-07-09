@@ -1,0 +1,50 @@
+
+'use client';
+
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { useAuth } from '@/context/AuthContext';
+import { signOut } from 'firebase/auth';
+import { auth } from '@/lib/firebase';
+import { useToast } from '@/hooks/use-toast';
+import { Button } from './ui/button';
+import { LogIn, LogOut, Hospital } from 'lucide-react';
+
+export default function Header() {
+  const { user } = useAuth();
+  const router = useRouter();
+  const { toast } = useToast();
+
+  const handleLogout = async () => {
+    if (!auth) return;
+    await signOut(auth);
+    toast({ title: "Logged Out" });
+    router.push('/login');
+  };
+
+  return (
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-sm">
+      <div className="container flex h-14 items-center">
+        <div className="mr-4 flex items-center">
+          <Link href="/" className="mr-6 flex items-center space-x-2">
+            <Hospital className="h-6 w-6 text-primary" />
+            <span className="font-bold">SwasthyaConnect</span>
+          </Link>
+        </div>
+        <div className="flex flex-1 items-center justify-end space-x-2">
+          {user ? (
+            <Button variant="ghost" onClick={handleLogout}>
+              <LogOut className="mr-2 h-4 w-4" /> Logout
+            </Button>
+          ) : (
+            <Button asChild>
+              <Link href="/login">
+                <LogIn className="mr-2 h-4 w-4" /> Login
+              </Link>
+            </Button>
+          )}
+        </div>
+      </div>
+    </header>
+  );
+}
